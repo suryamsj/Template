@@ -1,0 +1,223 @@
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+
+/* TAMPILAN */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eaeaea;
+    margin-top: 50px;
+}
+
+.bungkus {
+    margin: auto;
+    width: 750px;
+}
+
+.header {
+    background: teal;
+    padding: 20px;
+    color: white;
+}
+
+h1.judul {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu {
+    padding: 20px;
+    background: teal;
+}
+
+.menu ul li {
+    display: inline-block;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.menu ul li a:hover {
+    color: teal;
+    background: white;
+    border-radius: 5px;
+}
+
+.konten {
+    padding: 30px;
+    background: white;
+    margin-bottom: -12px;
+}
+
+.konten img {
+    width: 200px;
+    float: left;
+    margin-right: 8px;
+    margin-top: -14px;
+    border: 3px solid teal;
+}
+
+.konten h1.judul-artikel {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -16px;
+}
+
+h1.judul-artikel a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+h1.judul-artikel a:hover {
+    color: lightcoral;
+}
+
+p.tentang {
+    color: gray;
+}
+
+.konten p.isi a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.konten p.isi a:hover {
+    color: lightcoral;
+}
+
+
+
+.footer {
+    padding: 20px;
+    background: teal;
+}
+
+.footer p.credit {
+    color: white;
+    text-align: center;
+}
+
+
+/* CLEARFIX */
+/*
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *  contenteditable attribute is included anywhere else in the document.
+ *  Otherwise it causes space to appear at the top and bottom of elements
+ *  that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ * `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+    zoom: 1;
+}
